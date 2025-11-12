@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Delivery.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Swagger / OpenAPI -->
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+
+        <!-- Entity Framework Core (InMemory) -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- launchSettings.json está dentro de src/Delivery.Api -->
+        <None Remove="Properties\launchSettings.json" />
+        <None Include="src\Delivery.Api\Properties\launchSettings.json" />
+    </ItemGroup>
+
+</Project>
