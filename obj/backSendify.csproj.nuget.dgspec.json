@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/batimoff/RiderProjects/backSendify/backSendify/backSendify.csproj": {}
+  },
+  "projects": {
+    "/Users/batimoff/RiderProjects/backSendify/backSendify/backSendify.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/batimoff/RiderProjects/backSendify/backSendify/backSendify.csproj",
+        "projectName": "backSendify",
+        "projectPath": "/Users/batimoff/RiderProjects/backSendify/backSendify/backSendify.csproj",
+        "packagesPath": "/Users/batimoff/.nuget/packages/",
+        "outputPath": "/Users/batimoff/RiderProjects/backSendify/backSendify/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/batimoff/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "EntityFrameworkCore.CreatedUpdatedDate": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
