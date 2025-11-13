@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: backsendify-api
+    env: docker
+    plan: starter
+    branch: main
+    rootDir: .
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: Jwt__Key
+        sync: false
+      - key: Jwt__Issuer
+        value: BackSendify
+      - key: Jwt__Audience
+        value: BackSendifyClient
