@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  api:
+    image: maximoff19/backsendify
+    container_name: backsendify-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+      - ConnectionStrings__DefaultConnection=Server=yamanote.proxy.rlwy.net;Port=54044;Database=railway;User=root;Password=OOPqbhQDQWsXaaaWSEYWDWSPhKHKOjGK;
+    depends_on:
+      - db
+
+  db:
+    image: mysql:9.5
+    container_name: backsendify-db
+    restart: alway
+    environment:
+      - MYSQL_ROOT_PASSWORD=Daniela08+
+      - MYSQL_DATABASE=dbbacksendify
+    ports:
+      - "8090:8080"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
